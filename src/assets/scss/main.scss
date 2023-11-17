@@ -1,0 +1,23 @@
+@font-face {
+  font-family: "belwe-medium";
+  src: url('@/assets/fonts/belwe_medium.otf');
+}
+
+* {
+  font-family: "belwe-medium", Helvetica, Arial, sans-serif;
+  color: white;
+  line-height: 1;
+}
+
+body{
+  background-color: #343434;
+  margin: 0;
+}
+
+p{
+  margin: 0;
+}
+
+@import "button";
+@import "card";
+@import "modal";
