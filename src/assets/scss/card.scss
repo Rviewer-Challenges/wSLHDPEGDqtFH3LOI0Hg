@@ -1,0 +1,114 @@
+.card-wrap {
+  display: inline-block;
+  //border: 1px solid black;
+  width: 150px;
+  height: 206px;
+  perspective: 300px;
+  transition: 500ms all;
+
+  &.matched{
+    transform: scale(0.9);
+    opacity:0.8;
+  }
+}
+
+.card {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  transform-style: preserve-3d;
+  transform-origin: center right;
+  transition: transform 500ms;
+
+  &.is-flipped {
+    transform: translateX(-100%) rotateY(-180deg);
+    pointer-events: none;
+  }
+}
+
+.card-face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  background-size: contain;
+  background-repeat: no-repeat;
+  transition: 200ms all;
+
+  &:hover{
+    filter: drop-shadow(0px 0px 5px #cda23a);
+  }
+
+  &.back{
+    background-image: url('@/assets/img/cardback.png');
+    background-position-y: 8px;
+    background-size: 88%;
+    background-position-x: center;
+  }
+
+  &.front{
+    transform: rotateY(180deg);
+
+    &.bananas{
+      background-image: url('@/assets/img/cards/bananas.png');
+    }
+
+    &.blade_flurry{
+      background-image: url('@/assets/img/cards/blade_flurry.png');
+    }
+
+    &.brawl{
+      background-image: url('@/assets/img/cards/brawl.png');
+    }
+
+    &.dream{
+      background-image: url('@/assets/img/cards/dream.png');
+    }
+
+    &.equality{
+      background-image: url('@/assets/img/cards/equality.png');
+    }
+
+    &.explosive_trap{
+      background-image: url('@/assets/img/cards/explosive_trap.png');
+    }
+
+    &.eye_beam{
+      background-image: url('@/assets/img/cards/eye_beam.png');
+    }
+
+    &.feral_spirit{
+      background-image: url('@/assets/img/cards/feral_spirit.png');
+    }
+
+    &.nightmare{
+      background-image: url('@/assets/img/cards/nightmare.png');
+    }
+
+    &.pyroblast{
+      background-image: url('@/assets/img/cards/pyroblast.png');
+    }
+
+    &.runeforging{
+      background-image: url('@/assets/img/cards/runeforging.png');
+    }
+
+    &.silence{
+      background-image: url('@/assets/img/cards/silence.png');
+    }
+
+    &.twisting_nether{
+      background-image: url('@/assets/img/cards/twisting_nether.png');
+    }
+
+    &.wrath{
+      background-image: url('@/assets/img/cards/wrath.png');
+    }
+
+    &.ysera_awakens{
+      background-image: url('@/assets/img/cards/ysera_awakens.png');
+    }
+  }
+}
+

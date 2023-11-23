@@ -1,0 +1,149 @@
+.hs-wrapper {
+    cursor: pointer;
+}
+
+.hs-button {
+    display: block;
+    text-align: center;
+    border-radius: 2px;
+    border: solid 3px #795548;
+}
+
+.hs-text {
+    display: table-cell;
+    width: 100%;
+    vertical-align: middle;
+    padding: 0.5rem;
+    text-transform: uppercase;
+    text-shadow: 0 0 4px #000, 0 0 8px #000;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+.hs-border {
+    display: table;
+    padding: 3px;
+    border-radius: 2px;
+    height: 35px;
+    min-height: 35px;
+    color: #fff;
+    text-decoration: none;
+    text-shadow: 1px 1px #000;
+    font-size: 17px;
+    line-height: 1;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+////// SILVER BUTTON \\\\\\
+.hs-wrapper.silver {
+    background: #d8be52 linear-gradient(to bottom,
+            #d8be52,
+            #a77d33 9%,
+            #5f3f1d 93%,
+            #1c140d);
+    border-top: 2px solid #d8be52;
+    border-bottom: 2px solid #1c140d;
+
+    .hs-button {
+        background: linear-gradient(to bottom,
+                #6f5742,
+                #81615d);
+    }
+
+    .hs-text {
+        background: radial-gradient(circle,
+                #b6c2dd 25%,
+                #838da5 75%,
+                #43506e);
+    }
+
+    .hs-border {
+        box-shadow: 0 2px 6px 0 #3a4663;
+        background: #a1b9e8 linear-gradient(to bottom,
+                #bfcce6,
+                #a1b9e8 5%,
+                #43506e 59%,
+                #3a4663);
+    }
+
+    &:hover .hs-text {
+        background: radial-gradient(circle,
+                #cfdbf5 22%,
+                #a3afcc 83%,
+                #697da9);
+    }
+}
+
+
+////// PINK BUTTON \\\\\\
+.hs-wrapper.pink {
+    background: #c1b3b0 linear-gradient(to bottom,
+            #c1b3b0,
+            #c1b3b0 9%,
+            #4a3424 93%,
+            #1c140d);
+    border-top: 2px solid #AD9A90;
+    border-bottom: 2px solid #1c140d;
+
+    .hs-button {
+        background: linear-gradient(to bottom,
+                #6f5742,
+                #81615d);
+    }
+
+    .hs-text {
+        background: radial-gradient(circle,
+                #bc22c7 25%,
+                #7c1693 75%,
+                #5c1096);
+    }
+
+    .hs-border {
+        box-shadow: 0 2px 6px 0 #331e0b;
+        background: #BC22C7 linear-gradient(to bottom,
+                #f756fe,
+                #c84bd6 5%,
+                #7305ae 59%,
+                #661f91);
+    }
+
+    &:hover .hs-text {
+        background: radial-gradient(circle,
+                #e235ee 22%,
+                #981cb4);
+    }
+}
+
+
+////// GOLD BUTTON \\\\\\
+.hs-wrapper.gold {
+    .hs-button {
+        background: linear-gradient(to bottom,
+                #6f5742,
+                #81615d);
+    }
+
+    .hs-text {
+        background: radial-gradient(circle,
+                #edca37 25%,
+                #a77d33 75%,
+                #5f3f1d);
+    }
+
+    .hs-border {
+        box-shadow: 0 2px 6px 0 #362c26;
+        background: #a77d33 linear-gradient(to bottom,
+                #d8be52,
+                #d5b631 5%,
+                #5f3f1d 59%,
+                #362c26);
+    }
+
+    &:hover .hs-text {
+        background: radial-gradient(circle,
+                #fed83b 22%,
+                #dba23e 83%,
+                #9d6224);
+    }
+}
